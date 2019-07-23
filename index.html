@@ -4,64 +4,179 @@
         <title>Project: Recipe book</title>
         <meta charset="utf-8">
         <style>
-          h1 {color:green;
-              font-family:fantasy;
-              text-align:center;
+          #title-box {
+            position: relative;
+            text-align: center;
+          }
+          #broccoli {
+            opacity: 0.4;
+          }
+          h1 {
+              color: rgb(57,87,0);
+              font-family: monospace;
+              font-size: 50px;
+              border: 7px dotted;
+              position: absolute;
+              top: 40%;
+              left: 50%;
+              transform: translate(-50%, -50%);
           }
 
+          h2 {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 25px;
+          }
+
+          .dish-box {
+            //background-color: rgb(204, 255, 153);
+            border: 1px solid rgb(57,87,0);
+            border-top: 15px solid rgb(57,87,0);
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 10px
+          }
+
+          .dish-name {
+            border: 5px dotted;
+            text-align: center;
+
+          }
+
+          ol.contents-list li {
+            line-height: 25px;
+          }
+
+          table, th, td {
+            border: 1px solid black;
+          }
 
         </style>
     </head>
     <body>
 
+      <div id="title-box">
+          <img src="https://www.kasandbox.org/programming-images/food/broccoli.png" width=500px id="broccoli">
+          <h1>Wendy's Recipe Book</h1></div>
 
-        <h1>Wendy's Recipe Book</h1>
-        <img src="https://www.kasandbox.org/programming-images/food/broccoli.png" width="250" align="middle">
+      <div id="contents">
+        <img src="https://image.flaticon.com/icons/svg/427/427735.svg" width=40px style="float:left; margin-right: 10px">
+        <p style="font-family: monospace; font-size: 1.5em; font-weight:bold">Don't know what to cook for dinner tonight? No problem. Check out few of my favrite recipes collected from internt and cook-books. You might find the perfect idea for tonight's meal!<br></p>
         <h2>Contents:</h2>
-
-        <ol>
+        <ol class="contents-list">
             <li><a href="#thai-red-curry">Easy Thai Red Curry</a></li>
             <li><a href="#Shephred's-beef-pie">Shephred's Beef Pie</a></li>
-        </ol>
+        </ol></div>
 
-        <h2 id="thai-red-curry">Easy Thai Red Curry</h2>
-
+      <div class="dish-box">
+        <h2 class="dish-name">Easy Thai Red Curry</h2>
         <ul>
             <li>Time: 40 mins</li>
             <li>Serves: 4</li>
         </ul>
-
+        <img src="https://s23209.pcdn.co/wp-content/uploads/2018/02/Easy-Thai-Red-CurryIMG_3062.jpg" height=300px style="float: right; margin-left: 10px">
         <table>
-            <thead>
-                <tr>
-                    <th>Ingredients</th>
-                    <th>Quantity</th>
-                </tr>
-                <tr>
-                    <td>Skinless chicken breasts</td>
-                    <td>1 1/2 lb</td>
-                </tr>
-                <tr>
-                    <td>Shallot</td>
-                    <td>2</td>
-                </tr>
+          <tr>
+            <th>Ingredients</th><th>Quantity</th>
+            <th>Ingredients</th><th>Quantity</th>
 
-            </thead>
-            <tbody>
-            </tbody>
+          </tr>
+          <tr>
+            <td>Skinless chicken breasts</td>
+            <td>1 1/2 lb</td>
+            <td>Garlic</td>
+            <td>5 cloves</td>
+          </tr>
+          <tr>
+            <td>Shallot</td>
+            <td>2</td>
+            <td>Red curry paste</td>
+            <td>3 tablespoon</td>
+          </tr>
+          <tr>
+            <td>Ginger(freshly grated)</td>
+            <td>1 tablespoon</td>
+            <td>Broccoli head</td>
+            <td>1-2</td>
+          <tr>
+            <td>Lime juice(freshly squeezed)</td>
+            <td>2 tablespoons</td>
+            <td>Green onions</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Basmati rice</td>
+            <td>1 1/2 cups</td>
+            <td>Cilantro(fresh chopped leaves)</td>
+            <td>3 tablespoons</td>
+          </tr>
+          <tr>
+            <td>Canola oil</td>
+            <td>1 tablespoon</td>
+          </tr>
         </table>
 
-        <p><strong>Step 1: Do something.<br>
-        Step 2: Blah Blah Blah<br>
-        Step 3: Blah Blah Blah</strong>
-</p>
+        <p><strong>Step 1:</strong> Cook rice according to package instructions; set aside.<br>
+        <strong>Step 2:</strong> Cut skinless chicken breasts or thigh into 1-inch chuncks. Season with salt and pepper, to taste.<br>
+        <strong>Step 3:</strong> Mince shallots and garlic. Thinly slice green onions. Cut broccoli into 3-inch pieces.<br>
+        <strong>Step 4:</strong> Heat oil in a large stockpot or Dutch oven over medium heat. Add chicken, shallots and garlic to the stockpot and cook until golden, about 3-5 mins. <br>
+        <strong>Step 5:</strong> Stir in red curry paste and ginger until fragrant, about 1-2 mins. <br>
+        <strong>Step 6:</strong> Stir in coconut milk. Bring to a boil; reduce heat and cook, uncovered, stirring occasionally, unitl reduced and thickened, about 10-15 mins. <br>
+        <strong>Step 7:</strong> Stir in broccoli until just tender, about 3 mins. <br>
+        <strong>Step 8:</strong> Remove from heat; stir in green onions, cilantro and lime juice; seaon with salt and peper, to tase. <br>
+        <strong>Step 9:</strong> Serve immediately with rice. <br>
+        </p>
+        <p><em>Source: <a href="https://damndelicious.net/2018/02/25/easy-thai-red-curry/">Damn Delicious - Easy Thai Red Curry</a></em></p></div>
 
-    <p><em>Source: <a href="https://damndelicious.net/2018/02/25/easy-thai-red-curry/">Damn Delicious - Easy Thai Red Curry</a></em></p>
 
-    <h2 id="Shephred's-beef-pie">Shephred's Beef Pie</h2>
+      <div class="dish-box">
+        <h2 class="dish-name">Shephred's Beef Pie</h2>
         <ul>
-            <li>Time: 60 mins</li>
-            <li>Serves: 8</li>
+            <li>Time: 90 mins</li>
+            <li>Serves: 6</li>
         </ul>
+        <img src="https://www.recipes.co.nz/ic/2356136854/Cottage%20Pie%20mEAT14.1.jpg" width=200px style="float:left; margin-right:10px">
+        <table>
+            <tr>
+              <th>Ingredients</th><th>Quantity</th>
+              <th>Ingredients</th><th>Quantity</th>
+            </tr>
+            <tr>
+              <td>Onions</td><td>2</td>
+              <td>Carrots</td><td>2</td>
+            </tr>
+            <tr>
+              <td>Celery sticks</td><td>4</td>
+              <td>Ground beef</td><td>1 1/2 lb</td>
+            </tr>
+            <tr>
+              <td>Veg or other stock</td><td>1 1/2cup</td>
+              <td>Red wine</td><td>1/2 cup</td>
+            </tr>
+            <tr>
+              <td>Potatos(medium size)</td><td>3-4</td>
+              <td>Butter</td><td>1 tablespoon</td>
+            </tr>
+            <tr>
+              <td>Tomato paste</td><td>1/2 cup</td>
+              <td>Chedder cheese(shredded)</td><td>1 cup</td>
+            </tr>
+          </table>
+          <p><strong>Step 1:</strong> Chop the onions, carrots and celery. <br>
+            <strong>Step 2:</strong> In a dutchoven over a low heat, cook the ground beef until juices start to run. Add the vegetables and cook for 15 mins until soften. <br>
+            <strong>Step 3:</strong> Stir in the stock and wine and cook, covered, for 30 mins, stirring occasionally.<br>
+            <strong>Step 4:</strong> Meanwile, cut the potatos into chuncks and boil in salted water for 10 mins. Drain well and stir in the butter.<br>
+            <strong>Step 5:</strong> Stir the tomato paste into the meat, season with salt and pepper, to taste. <br>
+            <strong>Step 6:</strong> Preheat oven to 400F. <br>
+            <strong>Step 7:</strong> Spoon the potato peices on top of the meat, sprinkle over the cheese. <br>
+            <strong>Step 8:</strong> Bake for 30 mins until golden.<br>
+            <strong>Step 9:</strong> Serve immediately. <br>
+          </p>
+          <p><em>Modified from source: Good Food: Cheap Eats: Mediterranean Shephred's Pie, page 96.</em></p>
+      </div>
+
+
+
     </body>
 </html>
